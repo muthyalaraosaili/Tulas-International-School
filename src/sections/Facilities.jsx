@@ -7,7 +7,7 @@ import { FACILITIES } from '../data/schoolData';
 
 export default function Facilities({ onOpenEnquire }) {
   return (
-    <AnimatedSection id="facilities" className="py-24 bg-[#081921]/80 relative overflow-hidden">
+    <AnimatedSection id="facilities" className="py-24 bg-[var(--theme-bg)]/80 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionHeading
@@ -28,12 +28,12 @@ export default function Facilities({ onOpenEnquire }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className={`relative rounded-3xl overflow-hidden glass-card glass-card-hover border border-[#164E63] group ${
+                className={`relative rounded-3xl overflow-hidden glass-card glass-card-hover border border-[var(--theme-border)] group ${
                   isFeatured ? 'lg:col-span-2 lg:row-span-1' : ''
                 }`}
               >
                 {/* Image Container */}
-                <div className={`relative w-full ${isFeatured ? 'h-72 sm:h-80' : 'h-64 sm:h-72'} overflow-hidden bg-[#081921]`}>
+                <div className={`relative w-full ${isFeatured ? 'h-72 sm:h-80' : 'h-64 sm:h-72'} overflow-hidden bg-[var(--theme-bg)]`}>
                   <img
                     src={facility.image}
                     alt={facility.title}
@@ -42,21 +42,21 @@ export default function Facilities({ onOpenEnquire }) {
                   />
 
                   {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#081921] via-[#081921]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--theme-bg)] via-[var(--theme-bg)]/40 to-transparent" />
 
                   {/* Category Pill */}
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold text-[#67C9B8] bg-[#081921]/90 border border-[#67C9B8]/30 backdrop-blur-md">
+                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold text-[var(--theme-accent)] bg-[var(--theme-bg)]/90 border border-[#67C9B8]/30 backdrop-blur-md">
                     {facility.category}
                   </div>
                 </div>
 
                 {/* Content Overlay */}
                 <div className="p-6 sm:p-7 space-y-2">
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#F1F7F5] font-serif-heading group-hover:text-[#67C9B8] transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[var(--theme-text)] font-serif-heading group-hover:text-[var(--theme-accent)] transition-colors">
                     {facility.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-[#F1F7F5]/80 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[var(--theme-text)]/80 leading-relaxed">
                     {facility.description}
                   </p>
                 </div>
@@ -67,43 +67,43 @@ export default function Facilities({ onOpenEnquire }) {
 
         {/* Campus Facilities Feature Row */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="p-4 rounded-2xl bg-[#164E63]/20 border border-[#164E63] flex items-center gap-3">
-            <div className="p-2.5 rounded-xl bg-[#67C9B8]/20 text-[#67C9B8]">
+          <div className="p-4 rounded-2xl bg-[var(--theme-surface)]/20 border border-[var(--theme-border)] flex items-center gap-3">
+            <div className="p-2.5 rounded-xl bg-[#67C9B8]/20 text-[var(--theme-accent)]">
               <Trophy className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#F1F7F5]">16+ Sports</div>
-              <div className="text-[10px] text-[#F1F7F5]/60">Courts & Fields</div>
+              <div className="text-xs font-bold text-[var(--theme-text)]">16+ Sports</div>
+              <div className="text-[10px] text-[var(--theme-text)]/60">Courts & Fields</div>
             </div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-[#164E63]/20 border border-[#164E63] flex items-center gap-3">
+          <div className="p-4 rounded-2xl bg-[var(--theme-surface)]/20 border border-[var(--theme-border)] flex items-center gap-3">
             <div className="p-2.5 rounded-xl bg-[#F28C72]/20 text-[#F28C72]">
               <Shield className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#F1F7F5]">24/7 Security</div>
-              <div className="text-[10px] text-[#F1F7F5]/60">CCTV & Wardens</div>
+              <div className="text-xs font-bold text-[var(--theme-text)]">24/7 Security</div>
+              <div className="text-[10px] text-[var(--theme-text)]/60">CCTV & Wardens</div>
             </div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-[#164E63]/20 border border-[#164E63] flex items-center gap-3">
-            <div className="p-2.5 rounded-xl bg-[#67C9B8]/20 text-[#67C9B8]">
+          <div className="p-4 rounded-2xl bg-[var(--theme-surface)]/20 border border-[var(--theme-border)] flex items-center gap-3">
+            <div className="p-2.5 rounded-xl bg-[#67C9B8]/20 text-[var(--theme-accent)]">
               <HeartPulse className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#F1F7F5]">In-House Infirmary</div>
-              <div className="text-[10px] text-[#F1F7F5]/60">Resident Doctor</div>
+              <div className="text-xs font-bold text-[var(--theme-text)]">In-House Infirmary</div>
+              <div className="text-[10px] text-[var(--theme-text)]/60">Resident Doctor</div>
             </div>
           </div>
 
-          <div className="p-4 rounded-2xl bg-[#164E63]/20 border border-[#164E63] flex items-center gap-3">
+          <div className="p-4 rounded-2xl bg-[var(--theme-surface)]/20 border border-[var(--theme-border)] flex items-center gap-3">
             <div className="p-2.5 rounded-xl bg-[#F28C72]/20 text-[#F28C72]">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-xs font-bold text-[#F1F7F5]">100% Vegetarian</div>
-              <div className="text-[10px] text-[#F1F7F5]/60">Hygienic Dining</div>
+              <div className="text-xs font-bold text-[var(--theme-text)]">100% Vegetarian</div>
+              <div className="text-[10px] text-[var(--theme-text)]/60">Hygienic Dining</div>
             </div>
           </div>
         </div>

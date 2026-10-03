@@ -7,7 +7,7 @@ import { VERIFIED_TESTIMONIALS } from '../data/schoolData';
 
 export default function Testimonials() {
   return (
-    <AnimatedSection id="testimonials" className="py-24 bg-[#081921] relative">
+    <AnimatedSection id="testimonials" className="py-24 bg-[var(--theme-bg)] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionHeading
@@ -24,9 +24,9 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.15, duration: 0.5 }}
-              className="glass-card glass-card-hover rounded-3xl p-8 border border-[#164E63] flex flex-col justify-between space-y-6 relative overflow-hidden"
+              className="glass-card glass-card-hover rounded-3xl p-8 border border-[var(--theme-border)] flex flex-col justify-between space-y-6 relative overflow-hidden"
             >
-              <Quote className="w-10 h-10 text-[#67C9B8]/20 absolute top-6 right-6 pointer-events-none" />
+              <Quote className="w-10 h-10 text-[var(--theme-accent)]/20 absolute top-6 right-6 pointer-events-none" />
 
               <div className="space-y-4">
                 {/* Star Rating */}
@@ -36,20 +36,20 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <p className="text-sm sm:text-base text-[#F1F7F5]/85 leading-relaxed italic font-serif-heading">
+                <p className="text-sm sm:text-base text-[var(--theme-text)]/85 leading-relaxed italic font-serif-heading">
                   "{item.quote}"
                 </p>
               </div>
 
               {/* Author Details */}
-              <div className="pt-4 border-t border-[#164E63]/70 flex items-center justify-between">
+              <div className="pt-4 border-t border-[var(--theme-border)]/70 flex items-center justify-between">
                 <div>
-                  <h4 className="text-base font-bold text-[#F1F7F5]">{item.name}</h4>
-                  <p className="text-xs text-[#67C9B8] font-medium">{item.role}</p>
-                  <p className="text-[11px] text-[#F1F7F5]/60">{item.location}</p>
+                  <h4 className="text-base font-bold text-[var(--theme-text)]">{item.name}</h4>
+                  <p className="text-xs text-[var(--theme-accent)] font-medium">{item.role}</p>
+                  <p className="text-[11px] text-[var(--theme-text)]/60">{item.location}</p>
                 </div>
 
-                <div className="p-2 rounded-xl bg-[#164E63]/40 text-[#67C9B8] border border-[#67C9B8]/30">
+                <div className="p-2 rounded-xl bg-[var(--theme-surface)]/40 text-[var(--theme-accent)] border border-[#67C9B8]/30">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
               </div>

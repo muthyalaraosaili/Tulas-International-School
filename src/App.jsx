@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollProgress from './components/ScrollProgress';
 import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
@@ -17,12 +17,21 @@ import Contact from './sections/Contact';
 
 export default function App() {
   const [isEnquireModalOpen, setIsEnquireModalOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = window.localStorage.getItem('tis-theme');
+    return savedTheme === 'light' ? 'light' : 'dark';
+  });
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    window.localStorage.setItem('tis-theme', theme);
+  }, [theme]);
 
   const handleOpenEnquire = () => setIsEnquireModalOpen(true);
   const handleCloseEnquire = () => setIsEnquireModalOpen(false);
 
   return (
-    <div className="relative min-h-screen bg-[#081921] text-[#F1F7F5] selection:bg-[#67C9B8] selection:text-[#081921]">
+    <div className="relative min-h-screen bg-[var(--theme-bg)] text-[var(--theme-text)] selection:bg-[#67C9B8] selection:text-[#081921]">
       {/* Scroll Progress Bar at Viewport Top */}
       <ScrollProgress />
 
@@ -30,7 +39,11 @@ export default function App() {
       <CustomCursor />
 
       {/* Responsive Navbar */}
-      <Navbar onOpenEnquire={handleOpenEnquire} />
+      <Navbar
+        onOpenEnquire={handleOpenEnquire}
+        theme={theme}
+        onToggleTheme={() => setTheme(currentTheme => currentTheme === 'dark' ? 'light' : 'dark')}
+      />
 
       {/* Main Page Content */}
       <main className="relative z-10">

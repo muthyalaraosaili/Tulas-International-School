@@ -26,7 +26,7 @@ export default function Hero({ onOpenEnquire }) {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen pt-28 sm:pt-32 pb-20 flex items-center justify-center overflow-hidden bg-[#081921]">
+    <section id="hero" className="relative min-h-screen pt-28 sm:pt-32 pb-20 flex items-center justify-center overflow-hidden bg-[var(--theme-bg)]">
       {/* Background Decorative Ambient Glows */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#67C9B8]/15 rounded-full blur-[120px] pointer-events-none animate-pulse-glow" />
       <div className="absolute bottom-10 right-0 w-[30rem] h-[30rem] bg-[#F28C72]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -43,9 +43,9 @@ export default function Hero({ onOpenEnquire }) {
             className="lg:col-span-7 space-y-6 text-center lg:text-left"
           >
             {/* Top Pill Badge */}
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#164E63]/40 border border-[#67C9B8]/30 backdrop-blur-md">
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[var(--theme-surface)]/40 border border-[#67C9B8]/30 backdrop-blur-md">
               <Compass className="w-4 h-4 text-[#F28C72] animate-spin-slow" />
-              <span className="text-xs sm:text-sm font-semibold tracking-wide text-[#67C9B8] uppercase">
+              <span className="text-xs sm:text-sm font-semibold tracking-wide text-[var(--theme-accent)] uppercase">
                 {SCHOOL_INFO.tagline} • Dehradun, India
               </span>
             </motion.div>
@@ -53,7 +53,7 @@ export default function Hero({ onOpenEnquire }) {
             {/* Main Editorial H1 */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-6xl xl:text-7xl font-extrabold text-[#F1F7F5] tracking-tight leading-[1.1] font-serif-heading"
+              className="text-4xl sm:text-6xl xl:text-7xl font-extrabold text-[var(--theme-text)] tracking-tight leading-[1.1] font-serif-heading"
             >
               Where Ancient <br />
               <span className="gradient-text-coral">Gurukul Wisdom</span> <br />
@@ -63,11 +63,11 @@ export default function Hero({ onOpenEnquire }) {
             {/* Factual Description */}
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg text-[#F1F7F5]/80 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed"
+              className="text-base sm:text-lg text-[var(--theme-text)]/80 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed"
             >
-              <strong className="text-[#F1F7F5] font-semibold">{SCHOOL_INFO.name}</strong> is a premier 
+              <strong className="text-[var(--theme-text)] font-semibold">{SCHOOL_INFO.name}</strong> is a premier
               100% co-educational residential boarding school nestled in a 
-              <span className="text-[#67C9B8] font-medium"> 22-acre Himalayan foothill campus</span> in Dehradun. Affiliated with CBSE, we nurture student mind, body, and soul.
+              <span className="text-[var(--theme-accent)] font-medium"> 22-acre Himalayan foothill campus</span> in Dehradun. Affiliated with CBSE, we nurture student mind, body, and soul.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -98,35 +98,35 @@ export default function Hero({ onOpenEnquire }) {
             {/* Key Verified Highlights Pills */}
             <motion.div
               variants={itemVariants}
-              className="pt-6 border-t border-[#164E63]/60 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left max-w-xl mx-auto lg:mx-0"
+              className="pt-6 border-t border-[var(--theme-border)]/60 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left max-w-xl mx-auto lg:mx-0"
             >
               <div className="flex items-center gap-2.5">
-                <div className="p-2 rounded-lg bg-[#164E63]/50 border border-[#67C9B8]/30 text-[#67C9B8]">
+                <div className="p-2 rounded-lg bg-[var(--theme-surface)]/50 border border-[#67C9B8]/30 text-[var(--theme-accent)]">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-[#F1F7F5]">CBSE Affiliated</div>
-                  <div className="text-[11px] text-[#F1F7F5]/60">Class IV to XII</div>
+                  <div className="text-xs font-bold text-[var(--theme-text)]">CBSE Affiliated</div>
+                  <div className="text-[11px] text-[var(--theme-text)]/60">Class IV to XII</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5">
-                <div className="p-2 rounded-lg bg-[#164E63]/50 border border-[#67C9B8]/30 text-[#67C9B8]">
+                <div className="p-2 rounded-lg bg-[var(--theme-surface)]/50 border border-[#67C9B8]/30 text-[var(--theme-accent)]">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-[#F1F7F5]">22-Acre Campus</div>
-                  <div className="text-[11px] text-[#F1F7F5]/60">Green Boarding</div>
+                  <div className="text-xs font-bold text-[var(--theme-text)]">22-Acre Campus</div>
+                  <div className="text-[11px] text-[var(--theme-text)]/60">Green Boarding</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 col-span-2 sm:col-span-1">
-                <div className="p-2 rounded-lg bg-[#164E63]/50 border border-[#67C9B8]/30 text-[#F28C72]">
+                <div className="p-2 rounded-lg bg-[var(--theme-surface)]/50 border border-[#67C9B8]/30 text-[#F28C72]">
                   <Award className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-[#F1F7F5]">Top Rated</div>
-                  <div className="text-[11px] text-[#F1F7F5]/60">Co-Ed Residential</div>
+                  <div className="text-xs font-bold text-[var(--theme-text)]">Top Rated</div>
+                  <div className="text-[11px] text-[var(--theme-text)]/60">Co-Ed Residential</div>
                 </div>
               </div>
             </motion.div>
@@ -140,8 +140,8 @@ export default function Hero({ onOpenEnquire }) {
             className="lg:col-span-5 relative"
           >
             {/* Main Image Frame */}
-            <div className="relative rounded-3xl p-2 bg-gradient-to-b from-[#67C9B8]/30 via-[#164E63]/40 to-[#081921]/80 shadow-2xl overflow-hidden group border border-[#67C9B8]/20">
-              <div className="relative aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden bg-[#081921]">
+            <div className="relative rounded-3xl p-2 bg-gradient-to-b from-[#67C9B8]/30 via-[var(--theme-surface)]/40 to-[var(--theme-bg)]/80 shadow-2xl overflow-hidden group border border-[#67C9B8]/20">
+              <div className="relative aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden bg-[var(--theme-bg)]">
                 <img
                   src="https://tis.edu.in/_next/static/media/school.29985869.png"
                   alt="Tula's International School Dehradun Modern Campus Architecture"
@@ -150,14 +150,14 @@ export default function Hero({ onOpenEnquire }) {
                 />
 
                 {/* Gradient vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#081921] via-transparent to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--theme-bg)] via-transparent to-transparent opacity-80" />
 
                 {/* Overlay Text */}
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-card border border-[#67C9B8]/20">
-                  <div className="text-xs font-semibold text-[#67C9B8] uppercase tracking-wider mb-1">
+                  <div className="text-xs font-semibold text-[var(--theme-accent)] uppercase tracking-wider mb-1">
                     Dehradun Valley • Uttarakhand
                   </div>
-                  <div className="text-sm font-bold text-[#F1F7F5]">
+                  <div className="text-sm font-bold text-[var(--theme-text)]">
                     Eco-Friendly Boarding School for Academic & Character Excellence
                   </div>
                 </div>
@@ -171,12 +171,12 @@ export default function Hero({ onOpenEnquire }) {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="absolute -top-6 -right-4 sm:-right-6 glass-card p-4 rounded-2xl border border-[#67C9B8]/30 shadow-xl hidden sm:flex items-center gap-3 backdrop-blur-xl z-20 max-w-[200px]"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#67C9B8]/20 text-[#67C9B8] flex items-center justify-center font-bold text-lg shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-[#67C9B8]/20 text-[var(--theme-accent)] flex items-center justify-center font-bold text-lg shrink-0">
                 1:8
               </div>
               <div>
-                <div className="text-xs font-bold text-[#F1F7F5]">Teacher Ratio</div>
-                <div className="text-[10px] text-[#F1F7F5]/70">Personalized Care</div>
+                <div className="text-xs font-bold text-[var(--theme-text)]">Teacher Ratio</div>
+                <div className="text-[10px] text-[var(--theme-text)]/70">Personalized Care</div>
               </div>
             </motion.div>
 
@@ -191,8 +191,8 @@ export default function Hero({ onOpenEnquire }) {
                 16+
               </div>
               <div>
-                <div className="text-xs font-bold text-[#F1F7F5]">Sports Disciplines</div>
-                <div className="text-[10px] text-[#F1F7F5]/70">Horse Riding, Swimming</div>
+                <div className="text-xs font-bold text-[var(--theme-text)]">Sports Disciplines</div>
+                <div className="text-[10px] text-[var(--theme-text)]/70">Horse Riding, Swimming</div>
               </div>
             </motion.div>
 

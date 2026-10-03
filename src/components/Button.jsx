@@ -19,10 +19,10 @@ export default function Button({
     gold: "bg-gradient-to-r from-[#F28C72] to-[#e0765b] text-[#081921] font-bold hover:shadow-[0_0_25px_rgba(242,140,114,0.5)] border border-[#F28C72]/50",
     coral: "bg-gradient-to-r from-[#F28C72] to-[#e0765b] text-[#081921] font-bold hover:shadow-[0_0_25px_rgba(242,140,114,0.5)] border border-[#F28C72]/50",
     mint: "bg-gradient-to-r from-[#67C9B8] to-[#54b8a7] text-[#081921] font-bold hover:shadow-[0_0_25px_rgba(103,201,184,0.5)] border border-[#67C9B8]/50",
-    teal: "bg-[#164E63] text-[#F1F7F5] border border-[#67C9B8]/40 hover:border-[#67C9B8] hover:bg-[#103a49] hover:shadow-[0_0_20px_rgba(22,78,99,0.8)]",
-    navy: "bg-[#164E63]/80 text-[#67C9B8] border border-[#67C9B8]/30 hover:border-[#67C9B8] hover:bg-[#164E63] hover:shadow-[0_0_20px_rgba(22,78,99,0.8)]",
-    outline: "bg-transparent text-[#F1F7F5] border border-[#164E63] hover:border-[#67C9B8] hover:text-[#67C9B8] hover:bg-[#67C9B8]/10",
-    ghost: "bg-transparent text-[#F1F7F5]/80 hover:text-[#67C9B8] hover:bg-[#164E63]/30",
+    teal: "bg-[var(--theme-surface)] text-[var(--theme-text)] border border-[#67C9B8]/40 hover:border-[#67C9B8] hover:bg-[#103a49] hover:shadow-[0_0_20px_rgba(22,78,99,0.8)]",
+    navy: "bg-[var(--theme-surface)]/80 text-[var(--theme-accent)] border border-[#67C9B8]/30 hover:border-[#67C9B8] hover:bg-[var(--theme-surface)] hover:shadow-[0_0_20px_rgba(22,78,99,0.8)]",
+    outline: "bg-transparent text-[var(--theme-text)] border border-[var(--theme-border)] hover:border-[#67C9B8] hover:text-[var(--theme-accent)] hover:bg-[#67C9B8]/10",
+    ghost: "bg-transparent text-[var(--theme-text)]/80 hover:text-[var(--theme-accent)] hover:bg-[var(--theme-surface)]/30",
   };
 
   const sizes = {

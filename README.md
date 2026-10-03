@@ -1,65 +1,150 @@
 # Tula's International School (TIS) — Animated Homepage Redesign
 
-> **Frontend Developer Assessment Project for NetPuppys**  
-> A modern, premium, responsive, and animated homepage redesign for **Tula's International School (TIS)**, Dehradun — "The Modern Gurukul".
+**Frontend Developer Assessment Project for NetPuppys**
 
----
+A modern, premium, responsive, and animated homepage redesign for **Tula's International School (TIS), Dehradun**, inspired by the school's “The Modern Gurukul” identity.
 
 ## 🌟 Project Overview
 
-This project is a complete single-page homepage redesign built for **Tula's International School (TIS)**. It reimagines the school's online identity with a luxury editorial aesthetic, smooth animations, micro-interactions, responsive design, accessibility standards, and clean modular React code architecture.
+This project is a single-page homepage redesign created as part of the NetPuppys Frontend Developer Assessment. It combines a modern editorial aesthetic, responsive layouts, smooth animations, interactive components, and reusable React architecture to create an engaging user experience.
 
-The project preserves all factual information about TIS (CBSE affiliation, 22-acre eco-friendly campus, Class IV to XII offerings, Horse Riding, Swimming, Shooting facilities, 100% residential co-ed boarding, contact numbers, and campus address in Dehradun).
+The website showcases school information, academics, campus facilities, student activities, admissions, and contact details. School-specific facts and claims should be checked against the official website before submission.
 
----
+## 🌐 Project Links
+
+* **Live Demo:** https://tulas-international-school-delta.vercel.app/
+* **GitHub Repository:** https://github.com/muthyalaraosaili/Tulas-International-School
+* **Official School Website:** https://tis.edu.in/
 
 ## ✨ Features & Highlights
 
-### Required Website Sections
-1. **Responsive Navbar:** Sticky header with glassmorphism backdrop on scroll, active section pill indicator, desktop CTAs, accessible mobile drawer menu.
-2. **Hero Section:** Large editorial heading (*Where Ancient Gurukul Wisdom Meets Modern World*), factual description, primary CTA, secondary CTA, high-resolution campus photography, floating verified stat badges, entrance animations.
-3. **About TIS:** 2-column editorial layout showcasing the Gurukul philosophy, 22-acre Himalayan foothill campus, and verified stat metrics.
-4. **Academics:** CBSE curriculum cards for Junior & Middle School (IV-VIII), Secondary (IX-X), and Senior Secondary (XI-XII with Science, Commerce, Humanities). Includes an interactive modal for detailed syllabus requests.
-5. **Campus & Facilities Showcase:** Bento grid layout featuring Horse Riding Arena, Semi-Olympic Swimming Pool, Precision Shooting Range, Robotics Labs, Boarding Hostels, and Multi-Cuisine Dining.
-6. **Why Choose TIS:** Visual feature cards with Lucide icons highlighting mentorship (1:8 ratio), 24/7 security, mind-body-soul focus, and competitive exam preparation (JEE/NEET).
-7. **Life at TIS / Student Activities:** Gallery with category filters (Sports, Clubs, Arts, Culture, Events) for campus life, equestrian sports, astronomy, taekwondo, and the annual *Sanskriti* fest.
-8. **Testimonials:** Verified quotes from parents, alumni, and school leadership with star ratings and verified badges.
-9. **Admissions CTA:** Distinctive section outlining the 3-step admission journey with quick call and enquiry actions.
-10. **Contact Section:** Verified school address, landline & helpline numbers, email, Google Maps embed, and a client-side validated contact form with real-time validation and feedback banners.
-11. **Footer:** Comprehensive footer with school description, quick links, contact details, social links, and copyright.
+### 1. Responsive Navbar
 
-### 🚀 Advanced Features Implemented
-1. **Scroll-Triggered Reveals:** Framer Motion `whileInView` viewport triggers with reusable fade-up, staggered children, and scale variants.
-2. **Scroll Progress Bar:** Thin gold gradient progress bar at the top of the viewport powered by Framer Motion `useScroll` and `useSpring`.
-3. **Custom Cursor:** Mouse-following outer ring and inner dot for desktop pointer devices. Dynamically expands over interactive links/buttons and displays context labels (`Enquire`, `Explore`, `Apply`). Disabled on touch devices and respects `prefers-reduced-motion`.
-4. **Interactive Enquire Modal:** Global modal triggered from anywhere on the site with lead capture fields for parent name, email, phone number, and target grade.
+* Sticky navigation with a glassmorphism effect.
+* Active section indicator.
+* Desktop call-to-action buttons.
+* Responsive mobile navigation drawer.
+* Smooth section navigation.
 
----
+### 2. Hero Section
+
+* Large editorial heading and introductory content.
+* Prominent call-to-action buttons.
+* Campus imagery and animated elements.
+* Responsive layout and entrance animations.
+
+### 3. About TIS
+
+* School introduction and educational philosophy.
+* Editorial two-column layout.
+* Campus information and statistics.
+
+### 4. Academics
+
+* Junior and Middle School (Classes IV–VIII).
+* Secondary School (Classes IX–X).
+* Senior Secondary School (Classes XI–XII).
+* Subject streams and interactive syllabus enquiry interface.
+
+### 5. Campus & Facilities
+
+* Horse riding.
+* Swimming facilities.
+* Shooting facilities.
+* Robotics and learning spaces.
+* Boarding accommodation.
+* Dining facilities.
+
+### 6. Why Choose TIS
+
+* Feature cards with Lucide icons.
+* Student mentorship and learning environment.
+* Campus safety and student development information.
+* Competitive examination preparation information.
+
+### 7. Life at TIS & Student Activities
+
+* Campus activity gallery.
+* Category filters for sports, clubs, arts, culture, and events.
+* Visual presentation of student life and extracurricular activities.
+
+### 8. Testimonials
+
+* Testimonial cards for parents, alumni, and school representatives.
+* Responsive layouts and visual feedback elements.
+
+*Testimonials and any associated ratings should be included only when their sources have been verified.*
+
+### 9. Admissions CTA
+
+* Admission journey information.
+* Enquiry and call-to-action buttons.
+* Links to admission-related information.
+
+### 10. Contact Section
+
+* School contact information.
+* Address and map embed.
+* Contact form with client-side validation.
+* Input feedback and submission status messages.
+
+### 11. Footer
+
+* School introduction.
+* Quick navigation links.
+* Contact information and social links.
+* Copyright information.
+
+## 🚀 Advanced Features Implemented
+
+* **Scroll-Triggered Animations:** Uses Framer Motion viewport triggers to reveal sections as users scroll.
+* **Scroll Progress Indicator:** Displays page scrolling progress using Framer Motion scroll utilities.
+* **Custom Cursor:** Includes a mouse-following cursor with interactive hover effects on supported desktop pointer devices.
+* **Interactive Enquiry Modal:** Provides an enquiry interface with fields for parent name, email, phone number, and target grade.
+* **Light and Dark Theme Switcher:** Allows users to switch between light and dark themes.
+* **Responsive Interactions:** Adapts navigation and interactive elements for smaller screens.
+* **Reduced-Motion Support:** Respects reduced-motion preferences where implemented.
 
 ## 🛠️ Technology Stack
 
-- **Frontend Framework:** React.js (v19)
-- **Build Tool:** Vite
-- **Language:** JavaScript with JSX
-- **Styling:** Tailwind CSS (v4) with custom typography & glassmorphism utilities
-- **Animations:** Framer Motion (v12)
-- **Icons:** Lucide React
-- **Typography:** Google Fonts (*Outfit*, *Plus Jakarta Sans*, *Playfair Display*)
-- **Deployment Platform:** Vercel
+| Technology        | Purpose                                 |
+| ----------------- | --------------------------------------- |
+| React.js          | Component-based user interface          |
+| Vite              | Development server and build tool       |
+| JavaScript (ES6+) | Application logic                       |
+| JSX               | React component markup                  |
+| Tailwind CSS      | Responsive styling and layout           |
+| Framer Motion     | Animations and transitions              |
+| Lucide React      | Icons                                   |
+| Google Fonts      | Typography                              |
+| Vercel            | Deployment and hosting                  |
+| Git and GitHub    | Version control and source code hosting |
 
----
+## 🎨 Design System
+
+The design uses a modern visual style with deep teal, mint, off-white, and coral accents.
+
+| Color           | Hex Code  | Usage                  |
+| --------------- | --------- | ---------------------- |
+| Deep Teal       | `#164E63` | Primary color          |
+| Mint            | `#67C9B8` | Highlights and accents |
+| Off-white       | `#F1F7F5` | Light backgrounds      |
+| Coral           | `#F28C72` | Buttons and accents    |
+| Dark Background | `#081921` | Dark theme background  |
+
+The theme switcher provides light and dark viewing options. Theme persistence across page reloads is supported if localStorage has been implemented.
 
 ## 📁 Project Structure
 
 ```text
 tis-frontend-assignment/
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── screenshots/
 ├── src/
 │   ├── assets/
 │   │   └── images/
 │   ├── components/
-│   │   aria/
 │   │   ├── AnimatedSection.jsx
 │   │   ├── Button.jsx
 │   │   ├── CustomCursor.jsx
@@ -91,84 +176,125 @@ tis-frontend-assignment/
 └── README.md
 ```
 
----
+*This is a reference structure. Adjust it to match the actual files in your repository, including any theme-switcher components or context providers.*
 
 ## 💻 Prerequisites
 
-Ensure you have the following installed on your machine:
-- **Node.js:** `v18.0.0` or higher (Recommended: `v20.x` or `v24.x`)
-- **npm:** `v9.0.0` or higher
+Install the following before running the project:
 
----
+* Node.js (version 18 or later, compatible with the project's dependencies).
+* npm.
+* Git.
 
-## 🚀 Installation & Local Setup Instructions
+## 🚀 Installation & Local Setup
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/tis-frontend-assignment.git
-   cd tis-frontend-assignment
-   ```
+### 1. Clone the repository
 
-2. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
+Replace the placeholder URL with your actual GitHub repository URL.
 
-3. **Start Development Server:**
-   ```bash
-   npm run dev
-   ```
-   Open your browser and navigate to `http://localhost:5173`.
+```bash
+git clone https://github.com/YOUR_USERNAME/tis-frontend-assignment.git
+```
 
-4. **Build for Production:**
-   ```bash
-   npm run build
-   ```
+### 2. Navigate to the project directory
 
-5. **Preview Production Build Locally:**
-   ```bash
-   npm run preview
-   ```
+```bash
+cd tis-frontend-assignment
+```
 
----
+### 3. Install dependencies
 
-## 🖼️ Screenshots Section
+```bash
+npm install
+```
 
-To add project screenshots to this repository:
-1. Run `npm run dev` and take high-resolution screenshots at 1440px (Desktop), 768px (Tablet), and 375px (Mobile).
-2. Save images in `public/screenshots/` (e.g., `hero-desktop.png`, `facilities-bento.png`, `mobile-menu.png`).
-3. Embed them in your repository markdown:
-   ```markdown
-   ![TIS Desktop Hero](public/screenshots/hero-desktop.png)
-   ![Facilities Bento Grid](public/screenshots/facilities-bento.png)
-   ```
+### 4. Start the development server
 
----
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal. With the default Vite configuration, it is usually:
+
+```text
+http://localhost:5173
+```
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+### 6. Preview the production build
+
+```bash
+npm run preview
+```
+
+## 🖼️ Screenshots
+
+Add screenshots to showcase the design on desktop and mobile devices.
+
+Suggested screenshots:
+
+* Desktop homepage and hero section.
+* Academics and facilities sections.
+* Light theme and dark theme.
+* Mobile navigation.
+* Responsive layout on a smaller screen.
+
+Save the screenshots under `public/screenshots/`, then reference them in Markdown. For example:
+
+```markdown
+![TIS Homepage](public/screenshots/hero-desktop.png)
+
+![TIS Dark Theme](public/screenshots/dark-theme.png)
+
+![TIS Mobile View](public/screenshots/mobile-view.png)
+```
+
+Use these image references only after adding the corresponding screenshot files.
 
 ## 🌐 Deployment to Vercel
 
-### Step-by-Step Vercel Deployment:
-1. Push your code to a public GitHub repository named `tis-frontend-assignment`.
-2. Log in to your [Vercel Dashboard](https://vercel.com).
-3. Click **"Add New"** → **"Project"**.
-4. Import your `tis-frontend-assignment` repository from GitHub.
-5. Select framework preset **Vite**.
-6. Set root directory to `./` (default).
-7. Click **"Deploy"**.
+The project is hosted on Vercel.
 
-- **Live Demo URL:** `https://tis-frontend-assignment.vercel.app` *(Placeholder)*
-- **GitHub Repository:** `https://github.com/your-username/tis-frontend-assignment` *(Placeholder)*
+**Live Demo:** https://tulas-international-school-delta.vercel.app/
 
----
+To deploy your own version:
 
-## 📝 Contact Form Behavior Note
+1. Push your project to a GitHub repository.
+2. Sign in to [Vercel](https://vercel.com/).
+3. Select **Add New → Project**.
+4. Import your GitHub repository.
+5. Select Vite as the framework preset if it is not detected automatically.
+6. Set the build command to `npm run build`.
+7. Set the output directory to `dist`.
+8. Click **Deploy**.
 
-The contact and inquiry forms implemented on this website feature full **client-side input validation**, interactive state management, required field checks, and real-time user feedback notifications.
+## 📝 Contact Form Behavior
 
-> **Note:** As specified for this frontend developer assessment, no actual backend or email delivery service (e.g., EmailJS/SendGrid) is connected. Form submissions demonstrate complete UI/UX state flow and client validation.
+The contact and enquiry forms provide client-side input validation, required-field checks, interactive form states, and user feedback.
 
----
+**Important:** Unless a backend or email service has been connected, form submissions are not delivered to the school. The form demonstrates the frontend interaction and validation flow only.
+
+## ♿ Accessibility & User Experience
+
+The project aims to provide:
+
+* Responsive layouts across desktop, tablet, and mobile.
+* Clear navigation and interactive controls.
+* Accessible labels for form inputs and buttons where implemented.
+* Reduced-motion support for users who prefer fewer animations.
+* Appropriate visual contrast across light and dark themes.
 
 ## 📄 License & Attribution
 
-Designed and developed for NetPuppys Frontend Developer Assessment. Factual information and branding referenced from [Tula's International School Official Website](https://tis.edu.in/).
+This project was developed for the **NetPuppys Frontend Developer Assessment**.
+
+School branding and school-specific information are associated with Tula's International School. Refer to the [official website](https://tis.edu.in/) for school information.
+
+---
+
+**Built with React, Vite, Tailwind CSS, and Framer Motion.**
